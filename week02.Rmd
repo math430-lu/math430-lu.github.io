@@ -1,0 +1,25 @@
+---
+title: 'Week 2: Simple linear regression'
+output: html_document
+---
+
+January 9, 2017
+
+### Monday
+
+* Topic
+* Readings: 
+* For next time:
+
+
+### Wednesday 
+
+* Topic
+* Readings: 
+* For next time:
+
+### Friday
+
+* Topic
+* Readings: 
+* For next time:

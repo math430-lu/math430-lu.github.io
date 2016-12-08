@@ -1,0 +1,28 @@
+name: "math430-w16"
+output_dir: "."
+navbar:
+  title: "Math 430"
+  type: inverse
+  left:
+    - text: "Syllabus"
+      icon: fa-info
+      href: syllabus.html
+    - text: "Problem Sets"
+      icon: fa-pencil-square
+      href: probsets.html
+    - text: "Project"
+      icon: fa-file-text
+      href: project.html
+    - text: "Resources"
+      icon: fa-life-ring
+      href: resources.html
+    - text: "RStudio Server"
+      icon: 
+      href: http://rstudio.lawrence.edu/
+output:
+  html_document:
+    theme: yeti
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css

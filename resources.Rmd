@@ -1,0 +1,19 @@
+---
+title: "Resources"
+output: html_document
+---
+
+### Set up
+
+### R
+
+* [Cookbook for R](http://www.cookbook-r.com/)
+
+### R Studio
+
+* [RStudio IDE cheat sheet](http://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
+* 
+
+### R markdown
+
+* [R markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)

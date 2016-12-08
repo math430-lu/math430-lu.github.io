@@ -1,0 +1,18 @@
+---
+title: 'Week 1: Introduction to statistical modeling'
+output: html_document
+---
+
+January 4, 2017
+
+### Wednesday 
+
+* Introduction to the course
+* Readings: 
+* For next time:
+
+### Friday
+
+* Topic
+* Readings: 
+* For next time:

@@ -1,0 +1,11 @@
+---
+title: "Winter 2017 Schedule"
+---
+
+January 4
+
+#### [Week 1: Introduction to statistical modeling](week01.html)
+
+January 9
+
+#### [Week 2: Simple linear regression](week02.html)

@@ -1,0 +1,6 @@
+---
+title: "Syllabus"
+output: html_document
+---
+
+Put syllabus here.
