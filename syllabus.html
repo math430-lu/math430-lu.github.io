@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -163,6 +166,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -225,11 +323,103 @@ $(document).ready(function () {
 </div>
 
 
-<p>Put syllabus here.</p>
+<p><strong>Instructor:</strong> Adam Loy</p>
+<p><strong>Email:</strong> <a href="mailto:adam.m.loy@lawrence.edu">adam.m.loy@lawrence.edu</a></p>
+<p><strong>Class Time/Location:</strong> MWF 9:50-11:00 a.m. in Briggs 419</p>
+<p><strong>Office Hours:</strong> MW 3:10–4:30 p.m., T 2:00–4:00 p.m., F 11:00 a.m.–12:30 p.m.</p>
+<div id="expected-learning-outcomes" class="section level2">
+<h2>Expected Learning Outcomes</h2>
+<p>After finishing this course, you should have the skills to (i) properly assess if regression is an appropriate data analysis tool for a problem, (ii) correctly utilize regression models to answer complex questions from data, and (iii) clearly present results your from a regression analysis. In terms of more specific skills, by the end of the term you should be able to:</p>
+<ol style="list-style-type: decimal">
+<li>Fit a regression model in R and interpret the output.</li>
+<li>Apply appropriate transformations to the response variable to improve agreement with the model assumptions.</li>
+<li>Use residual and influence diagnostics to assess model fit and agreement with model assumptions, and to identify outliers and influential observations.</li>
+<li>Create sets of indicator variables for categorical variables.</li>
+<li>Apply step-wise model selection to select the most significant explanatory variables from a large data set.</li>
+<li>Fit a logistic regression model in R and interpret the output.</li>
+</ol>
+</div>
+<div id="course-logistics" class="section level2">
+<h2>Course Logistics</h2>
+<div id="prerequisites" class="section level4">
+<h4>Prerequisites:</h4>
+<p>Math 240 or a comparable course in probability. Previous exposure to statistics and matrix algebra will be useful, but not assumed.</p>
+</div>
+<div id="required-textbook" class="section level4">
+<h4>Required textbook:</h4>
+<p><em>A Modern Approach to Regression with R</em>, Simon J. Sheather, 2009, Springer, ISBN 978-0-387-09607-0.</p>
+</div>
+<div id="computing" class="section level4">
+<h4>Computing:</h4>
+<p>Modern statistical analysis is done in a computing environment, so this course has a strong computational focus. We will use the R language with the RStudio interface, which are both free and open-source. You have two options for using RStudio:</p>
+<ol style="list-style-type: decimal">
+<li><p>The <strong>server</strong> version of RStudio on the web at (<a href="http://rstudio.lawrence.edu/" class="uri">http://rstudio.lawrence.edu/</a>). The advantage of using the server version is that all of your work will be stored in the cloud, where it is automatically saved and backed up. This means that you can access your work from any computer on campus using a web browser. The downside is that you can’t access the server off campus (yes, this includes Bjorklunden) and that you have to share limited computational resources with each other!</p></li>
+<li><p>A <strong>local</strong> version of RStudio installed on your machine. This is recommended due to the computational resources this course demands. The downside to this approach is that your work is only stored locally, but I get around this problem by keeping all of my work in a Dropbox folder. I will also show you how to use GitHub for version control.</p></li>
+</ol>
+<p>Note that you do not have to choose one or the other, you may use both. However, it is important that you understand the distinction so that you can keep track of your work. Both R and RStudio are free and open-source.</p>
+</div>
+</div>
+<div id="course-components" class="section level2">
+<h2>Course Components</h2>
+<div id="preparation-and-study" class="section level4">
+<h4>Preparation and study:</h4>
+<p>You must read the assigned sections of the text before we discuss them in class so that you are already working with the ideas in advance of hearing about them from me. In addition, review your lecture notes after each lecture, carefully reconstructing for yourself the ideas, arguments, and overall story that is developing. Coming to class for 70 minutes 3 times a week is not sufficient to learn statistics and reorganize your thought processes.</p>
+</div>
+<div id="class-attendance" class="section level4">
+<h4>Class attendance:</h4>
+<p>During class we will explore the statistical thought process through lecture, discussion, and hands-on data analysis. Office hours are not substitutes for class attendance.</p>
+</div>
+<div id="homework" class="section level4">
+<h4>Homework:</h4>
+<p>Analyzing data is the only way to deeply learn the thought process behind statistical modeling. Homework for this class will be assigned (most) Wednesdays and due the following week. Homework will solidify important results and give you an opportunity to analyze data. All analyses should be completed in R and summaries should be written using R markdown.</p>
+</div>
+<div id="midterm" class="section level4">
+<h4>Midterm:</h4>
+<p>There will be one midterm exam used to gauge your understanding of simple and multiple regression. The date of the exam will be announced in class at least one week prior.</p>
+</div>
+<div id="final-project" class="section level4">
+<h4>Final project:</h4>
+<p>Much of this course is a build up to the final project, which is a capstone experience synthesizing everything you have learned over the course of the term. This is an opportunity for you to exercise your creativity and create something meaningful. The project will require you to complete the entire statistical modeling process—from formulating questions to reporting your final model—using a data set of your choice. More details about the project will follow.</p>
+</div>
+</div>
+<div id="course-policies" class="section level2">
+<h2>Course Policies</h2>
+<div id="evaluation" class="section level4">
+<h4>Evaluation:</h4>
+<p>Homework assignments will be worth a total of 50% of your final grade, the midterm will be worth 20%, and the final project will be work 30%.</p>
+</div>
+<div id="homework-policies" class="section level4">
+<h4>Homework Policies:</h4>
+<p>Homework will be due on (most) Wednesdays by 4:30 p.m., allowing you to submit your homework and enjoy some treats at Math Tea!</p>
+<p>I will allow you to discuss homework problems with your fellow classmates, but I insist that you write up and submit your own solutions. I am allowing you to discuss problems so that you can share problem solving strategies, not so that you can avoid doing the problems yourself. Remember that copying another student’s work is a violation of the honor code.</p>
+<p>You will be graded on the correctness of your solutions and how easy they are to read and understand. You will receive full credit for a solution to a problem if and only if a randomly selected student in the class would understand how to do the problem after having read your solution. No late homework will be accepted without a valid excuse.</p>
+</div>
+<div id="classroom-culture" class="section level4">
+<h4>Classroom Culture:</h4>
+<p>If you would rather be talking, sleeping, reading the news, listening to music, or texting, I suggest that you do that somewhere much more comfortable than the classroom. When you attend class, please arrive on time and stay engaged throughout the entire class.</p>
+</div>
+<div id="honor-code" class="section level4">
+<h4>Honor Code:</h4>
+<blockquote>
+<p><em>No Lawrence student will unfairly advance their own academic performance or in any way limit or impede the academic pursuits of other students of the Lawrence community.</em></p>
+</blockquote>
+<p>All students are expected to uphold Lawrence University’s Honor Code. All work on exams must be your own. You may collaborate on homework, but you must submit your own assignment that reflects your own thinking, work and organization. Any assignment you submit for a grade should be your own work, and not a facsimile of a classmate’s work, which would constitute academic dishonesty. To check if your homework meets this standard, imagine I asked you to explain your reasoning for each problem—you should be able to do so with ease using language similar to your submission. All written work must be accompanied by a reaffirmation of the Honor Code. Finally, cell phones will be prohibited during exams.</p>
+</div>
+<div id="disability-policy" class="section level4">
+<h4>Disability Policy:</h4>
+<p>Lawrence University is committed to providing reasonable accommodations for students with disabilities. Students establish eligibility and request accommodations through the Center for Academic Success. View the Accessibility Services web page at go.lawrence.edu/cas for more information.</p>
+</div>
+<div id="healthy-balance" class="section level4">
+<h4>Healthy Balance:</h4>
+<p>All members of the Lawrence community—students, staff, and faculty—have the responsibility to promote balance in their lives by making thoughtful choices. Balance results from two skills: avoiding imbalance through careful planning, and managing and containing imbalance when it occurs. This course will be demanding, but should not overwhelm your academic (let alone whole) life. If it threatens to, come talk to me, a tutor, friend, counselor, or advisor.</p>
+</div>
+</div>
 
 <p>Running footer text here</p>
 
 
+</div>
+</div>
 
 </div>
 
