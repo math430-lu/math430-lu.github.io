@@ -5,13 +5,15 @@ output: html_document
 
 January 4, 2017
 
-### Wednesday 
+#### Wednesday 
 
-* Introduction to the course
-* Readings: 
-* For next time:
+* [Intro slides](http://htmlpreview.github.io/?https://github.com/math430-lu/notes/blob/master/lec01/01-intro.html#1) 
+* For next time
+    + Read Section 2.1
+    + If you want to use the server version of R Studio, the make sure that you can log on to the [server](https://rstudio.lawrence.edu/)
+    + If you want to use a local version of R Studio, then install R, R Studio, and LaTeX ([Mac instructions](http://www.reed.edu/data-at-reed/software/R/r_studio.html), [Windows instructions](http://www.reed.edu/data-at-reed/software/R/r_studio_pc.html))
 
-### Friday
+#### Friday
 
 * Topic
 * Readings: 

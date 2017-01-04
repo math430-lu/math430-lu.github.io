@@ -23,6 +23,4 @@ output:
   html_document:
     theme: yeti
     highlight: textmate
-    include:
-      after_body: footer.html
     css: styles.css
