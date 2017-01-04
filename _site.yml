@@ -2,7 +2,6 @@ name: "math430-w16"
 output_dir: "."
 navbar:
   title: "Math 430"
-  type: inverse
   left:
     - text: "Syllabus"
       icon: fa-info
@@ -19,8 +18,3 @@ navbar:
     - text: "RStudio Server"
       icon: 
       href: http://rstudio.lawrence.edu/
-output:
-  html_document:
-    theme: yeti
-    highlight: textmate
-    css: styles.css
