@@ -7,19 +7,23 @@ January 9, 2017
 
 ### Monday
 
-* Topic
-* Readings: 
-* For next time:
+Fitting SLR models
+
+* Slides [(html)](http://htmlpreview.github.io/?https://github.com/math430-lu/notes/blob/master/lec02/slr-fit.html) [(pdf)](https://github.com/math430-lu/notes/blob/master/lec02/fitting-slr-slides.pdf)
+
+* [Worksheet](https://github.com/math430-lu/notes/blob/master/worksheets/01-slr-estimates.pdf)
+
+For next time
+
+* Read 2.2--2.4
+
+* If you have not had a statistics course before (or if it's been a while), I recommend reading Chapter 4 of [OpenIntro Statistics](https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view)
 
 
 ### Wednesday 
 
-* Topic
-* Readings: 
-* For next time:
+
 
 ### Friday
 
-* Topic
-* Readings: 
-* For next time:
+
