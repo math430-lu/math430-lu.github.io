@@ -22,8 +22,36 @@ For next time
 
 ### Wednesday 
 
+Inference for SLR models
 
+* Slides [(html)](http://htmlpreview.github.io/?https://github.com/math430-lu/notes/blob/master/lec03/slr-inference.html) [(pdf)](https://github.com/math430-lu/notes/blob/master/lec03/slr-inference.pdf)
+
+For next time
+
+* If you want to use the R Studio server, then check that you can login to the R Studio Server from your browser at [rstudio.lawrence.edu](https://rstudio.lawrence.edu/). You must be on campus to login to the server.
+
+
+* If you want to use a local version of R Studio on your personal computer, then install the following
+    
+    - [R](https://cran.r-project.org/) programming language and software environment for statistical computing and graphics
+    - [RStudio](https://www.rstudio.com/products/rstudio/download3/) integrated development environment (IDE) for R.
+
+    (On Macs, when prompted to install command line developer tools, select "Install". On Windows, you should get a similar prompt.)
 
 ### Friday
 
+Lab
+
+* [.Rmd](https://raw.githubusercontent.com/math430-lu/notes/master/lab01/lab1.Rmd) file
+* [saratoga.csv](https://github.com/math430-lu/data/raw/master/saratoga.csv)
+
+To download the .Rmd file, set you can either right click and save the file, or do this in the console in R. To download the file via the console do the following:
+
+1. Change your working directory to a logical place (I will show you how to do this in class)
+
+2. Run the following code command in the console:
+
+```{r eval=FALSE}
+download.file(url = "https://raw.githubusercontent.com/math430-lu/notes/master/lab01/lab1.Rmd", destfile = "lab1.Rmd")
+```
 
