@@ -3,4 +3,4 @@ title: "Problem Sets"
 output: html_document
 ---
 
-* [Problem Set 1](http://htmlpreview.github.io/?https://github.com/math430-lu/math430-lu.github.io/blob/master/ps/ps1.html) (due 1/18 by 4:30 p.m.)
+* [Problem Set 1](ps/ps1.html) (due 1/18 by 4:30 p.m.)
