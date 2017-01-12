@@ -1,0 +1,65 @@
+---
+title: "Problem Set 1"
+author: "Math 430, Winter 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Due Date: Wednesday, January 18 by 4:30 p.m.
+
+For problems 1 and 2 you should complete your work in the [R markdown solution template](hw-template.Rmd). Please knit your file either to Word or PDF and print the document for submission.
+
+## Problem 1
+
+The file [`snow.csv`](https://github.com/math430-lu/data/raw/master/snow.csv) contains data from a snow gauge
+calibration study. A snow gauge is an instrument that measures the wetness of snow, which is crucial in western states for predicting water availability. Wet snow is denser than dry snow. Density is time consuming to measure directly; the snow gauge instrument measures a quantity called gain that depends on the density. The data at hand were collected to calibrate the instrument, that is describe how gain is related to density. When the snow gauge is used, the gain is measured and used to predict the snow density.
+
+Polyethylene blocks were used as substitute for snow. These can be manufactured in different densities. The density is set by the process used to manufacture the blocks. The data set (in `snow.csv`) includes 9 densities. Ten blocks of each density were measured.
+
+(a) The investigators plan to use regression to describe the relationship between gain and density. Which variable (gain or density) should be used as the X variable? Which is the Y variable? If it doesn’t matter, say so. Briefly explain.
+
+
+
+(b) Rightly or wrongly, the investigators decide to use density as the X variable and gain as the Y variable. For all this and subsequent parts of this question, please assume that the usual simple linear regression model is appropriate. Estimate the slope and intercept of the regression of gain on density.
+
+
+(c) If you assume a linear relationship, is density related to gain? In other words, test whether the slope = 0. Report your p-value and a short conclusion.
+
+
+(d) Predict the average gain when the density = 0.2
+
+
+
+
+## Problem 2
+
+The data file [`ftcollinstemp.csv`](https://github.com/math430-lu/data/raw/master/ftcollinstemp.csv) gives the mean temperature in the `fall` of each year, defined as September 1 to November 30, and the mean temperature in the following `winter`, defined as December 1 to the end of February in the following calendar year, in degrees Fahrenheit, for Fort Collins, CO (Colorado Climate Center, 2012). These data cover the time period from 1900 to 2010. The question of interest is: Does the average `fall` temperature predict the average `winter` temperature?
+
+(a) Draw (in R) a scatterplot of the response versus the predictor, and describe any pattern you might see in the plot.
+
+(b) Use R to fit the regression of the response on the predictor.
+
+(c) Interpret the estimated y-intercept in the context of the problem.
+
+(d) Interpret the estimated slope in the context of the problem.
+
+(e) Construct a 95% confidence interval for the slope and interpret it in the context of the problem. Does the slope appear to be significantly different from 0?
+
+(f) The following code snippet breaks the data set into two time periods: an early period from 1900 to 1989 and a late period from 1990 to 2010.
+
+```{r eval=FALSE}
+early <- subset(ftcollinstemp, year < 1990)
+late <- subset(ftcollinstemp, year >= 1990)
+```
+
+    Fit the regression model to each of the time periods. Are the results different in the two time periods? Justify your answer statistically.
+
+
+## Problem 3
+
+(a) Show that the estimated slope can be written as $\widehat{\beta}_1 = r \cdot \dfrac{s_y}{s_x}$, where $s_x$ and $s_y$ are the sample standard deviations of $x$ and $y$, respectively.
+
+(b) What does this indicate about the relationship between signs of the correlation and the slope?

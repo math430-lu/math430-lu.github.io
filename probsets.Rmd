@@ -3,3 +3,4 @@ title: "Problem Sets"
 output: html_document
 ---
 
+* [Problem Set 1](ps/ps1.html) (due 1/18 by 4:30 p.m.)

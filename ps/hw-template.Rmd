@@ -1,0 +1,91 @@
+---
+title: "Problem Set #"
+author: "Your Name Here"
+date: "The date"
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r, setup, include=FALSE}
+library(ggplot2)   # Load additional packages here 
+
+# Some customization.  You can alter or delete as desired (if you know what you are doing).
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+```
+
+## Problem 1
+
+#### (a)
+
+Write your solution here...
+
+#### (b)
+
+```{r}
+# Insert your code here
+```
+
+#### (c)
+
+```{r}
+# Insert your code here
+```
+
+Write your solution here...
+
+#### (d)
+
+```{r}
+# Insert your code here
+```
+
+
+## Problem 2
+
+#### (a)
+
+```{r}
+# Insert your code here
+```
+
+Write your solution here...
+
+#### (b)
+
+```{r}
+# Insert your code here
+```
+
+#### (c)
+
+Write your solution here...
+
+#### (d)
+
+Write your solution here...
+
+#### (e)
+
+```{r}
+# Insert your code here
+```
+
+Write your solution here...
+
+#### (f)
+
+```{r}
+# Insert your code here
+```
+
+Write your solution here...
