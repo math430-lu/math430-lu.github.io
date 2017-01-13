@@ -55,3 +55,8 @@ To download the .Rmd file, set you can either right click and save the file, or 
 download.file(url = "https://raw.githubusercontent.com/math430-lu/notes/master/lab01/lab1.Rmd", destfile = "lab1.Rmd")
 ```
 
+For next time
+
+* Complete problem set 1 by 4:30 on Wednesday
+
+* Read 2.4-2.6

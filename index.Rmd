@@ -9,3 +9,7 @@ January 4
 January 9
 
 #### [Week 2: Simple linear regression](week02.html)
+
+January 16
+
+#### [Week 3: Diagnosing models](week03.html)

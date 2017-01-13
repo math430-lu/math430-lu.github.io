@@ -1,0 +1,25 @@
+---
+title: 'Week 3: Diagnosing models'
+output: html_document
+---
+
+January 16, 2017
+
+### Monday
+
+No Class -- MLK, Jr. Day
+
+### Wednesday
+
+Inference for prediction
+
+* Slides
+
+For next time
+
+* Watch the recorded lecture on diagnosing models
+
+
+### Friday
+
+No Class -- Prof. Loy traveling
