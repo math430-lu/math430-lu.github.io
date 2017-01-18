@@ -17,9 +17,9 @@ Inference for prediction
 
 For next time
 
-* Watch the recorded lecture on diagnosing models
-    + [Slides](https://github.com/math430-lu/notes/blob/master/lec05/assess-slr.pdf)
-    + Video
+* Watch the recorded lecture on diagnosing models [(Slides)](https://github.com/math430-lu/notes/blob/master/lec05/assess-slr.pdf)
+  
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 0px; height: 0; overflow: auto; -webkit-overflow-scrolling: touch;"><iframe id="ensembleEmbeddedContent_tMZl_hoRV0iE4W0Kv1V42Q" src="https://video.lawrence.edu/app/plugin/embed.aspx?ID=tMZl_hoRV0iE4W0Kv1V42Q&isResponsive=true&isNewPluginEmbed=true&displayTitle=false&startTime=0&autoPlay=false&hideControls=true&showCaptions=false&displaySharing=false&displayAnnotations=false&displayAttachments=false&displayLinks=false&displayEmbedCode=false&displayDownloadIcon=false&displayMetaData=false&displayDateProduced=false&audioPreviewImage=false&displayCaptionSearch=false" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" scrolling="no" allowfullscreen></iframe></div>  
 
 
 ### Friday
