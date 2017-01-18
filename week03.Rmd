@@ -13,11 +13,13 @@ No Class -- MLK, Jr. Day
 
 Inference for prediction
 
-* Slides
+* [Slides](https://github.com/math430-lu/notes/blob/master/lec04/slr-prediction-inference.pdf)
 
 For next time
 
 * Watch the recorded lecture on diagnosing models
+    + [Slides](https://github.com/math430-lu/notes/blob/master/lec05/assess-slr.pdf)
+    + Video
 
 
 ### Friday
