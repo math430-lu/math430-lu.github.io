@@ -12,4 +12,8 @@ January 9
 
 January 16
 
-#### [Week 3: Diagnosing models](week03.html)
+#### [Week 3: Inference + diagnostics](week03.html)
+
+January 23
+
+#### [Week 4: Diagnostics + remedial measures](week04.html)

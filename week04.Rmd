@@ -1,0 +1,24 @@
+---
+title: 'Week 4: Diagnosing + remedial measures'
+output: html_document
+---
+
+January 23, 2017
+
+### Monday
+
+Lab 2: Model diagnostics in R
+
+* [Intro slides](http://htmlpreview.github.io/?https://github.com/math430-lu/notes/blob/master/lab02/slr_diag_in_r.html)
+
+* lab02.Rmd [(View)](https://github.com/math430-lu/notes/blob/master/lab02/slr_diag_lab.Rmd), <a href="https://github.com/math430-lu/notes/raw/master/lab02/slr_diag_lab.Rmd" download>(Download)</a>
+
+* Data sets: [voltage.csv](https://github.com/math430-lu/data/raw/master/voltage.csv), [tourism.csv](https://github.com/math430-lu/data/raw/master/tourism.csv), [RailTrail.csv](https://github.com/math430-lu/data/raw/master/RailTrail.csv)
+
+
+### Wednesday
+
+
+
+### Friday
+
