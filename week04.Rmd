@@ -32,6 +32,8 @@ Transformations (continued)
 
 * Slides [(pdf)](https://github.com/math430-lu/notes/blob/master/lec06/06-transformations.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec06/06-transformations.Rmd) (All of the code used is in the .Rmd file) 
 
+* Goodness of fit slides [(pdf)](https://github.com/math430-lu/notes/blob/master/lec07/07-goodness-of-fit.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec07/07-goodness-of-fit.Rmd)
+
 For next time
 
 * Read 2.5
