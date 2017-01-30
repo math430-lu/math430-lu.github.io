@@ -1,0 +1,27 @@
+---
+title: 'Week 5: Reformulating SLR using matrices'
+output: html_document
+---
+
+January 30, 2017
+
+### Monday
+
+Lab 3: Transforming models in R
+
+* lab03.Rmd [(View)](https://github.com/math430-lu/notes/blob/master/lab03/lab03.Rmd), <a href="https://github.com/math430-lu/notes/raw/master/lab03/lab03.Rmd" download>(Download)</a>
+
+
+For next time: 
+
+* Finish the problem set
+
+### Wednesday
+
+Intro to MLR
+
+
+### Friday
+
+MLR
+

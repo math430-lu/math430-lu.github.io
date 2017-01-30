@@ -17,3 +17,7 @@ January 16
 January 23
 
 #### [Week 4: Diagnostics + remedial measures](week04.html)
+
+January 30
+
+#### [Week 5: Reformulating SLR using matrices](week05.html)
