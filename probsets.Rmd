@@ -3,7 +3,7 @@ title: "Problem Sets"
 output: html_document
 ---
 
-* [Problem Set 1](ps/ps1.html) (due 1/18 by 4:30 p.m.)
+* [Problem Set 1](ps/ps1.html) [(Solution)](ps/hw1-sol.pdf)
 
 * [Problem Set 2](ps/ps2.html) (due 1/25 by 4:30 p.m.)
 
