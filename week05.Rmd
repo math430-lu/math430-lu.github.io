@@ -18,10 +18,12 @@ For next time:
 
 ### Wednesday
 
-Intro to MLR
+Polynomial regression + matrix formulation of SLR
+
+* Polynomial regression slides [(pdf)](https://github.com/math430-lu/notes/blob/master/lec08/polynomial.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec08/polynomial.Rmd)
 
 
 ### Friday
 
-MLR
+Matrix formulation of SLR
 
