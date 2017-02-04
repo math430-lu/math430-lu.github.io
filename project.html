@@ -11,7 +11,7 @@
 
 
 
-<title>Project</title>
+<title>Final Project</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -162,6 +165,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -219,15 +317,66 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Project</h1>
+<h1 class="title toc-ignore">Final Project</h1>
 
 </div>
 
 
-<p>Details to come.</p>
+<div id="deadline-1-proposals-28" class="section level2">
+<h2>Deadline 1: Proposals (2/8)</h2>
+<p>The first component of the project is a proposal. This is a written document that can be done in markdown, Word, etc. Your proposal is due by Wednesday, 2/8.</p>
+<div id="content" class="section level3">
+<h3>Content</h3>
+<p>Your final proposals should contain the following content:</p>
+<ul>
+<li><strong>Group Members:</strong> List the members of your group</li>
+<li><strong>Title:</strong> Your title</li>
+<li><strong>Purpose:</strong> Describe the general topic/phenomenon you want to study, as well some focused questions that you hope to answer and specific hypotheses that you intend to assess.</li>
+<li><strong>Data</strong>: Describe the data that you plan to use, with specifications of where it can be found (URL) and a short description. Eventually, you will probably want to combine data from multiple sources into one file. We will discuss data management techniques in the coming weeks, but for now you should simply list multiple sources if you have them.</li>
+<li><strong>Population:</strong> Specify what the observational units are (i.e. the rows of the data frame), describe the larger population/phenomenon to which you’ll try to generalize, and (if appropriate) estimate roughly how many such individuals there are in the population.</li>
+<li><strong>Response Variable:</strong> What is the response variable? What are its units? Estimate the range of possible values that it may take on.</li>
+<li><strong>Explanatory Variables:</strong> Describe the variables that you’ll examine for each observational unit (i.e. the columns of the data frame). Carefully define each variable and describe how each was measured. For categorical variables, list the possible categories; for quantitative variables, specify the units of measurement. You may want to add more variables later on, but you should have at least 5 variables already.</li>
+</ul>
+</div>
+<div id="places-to-find-data" class="section level3">
+<h3>Places to Find Data</h3>
+<p>Public data sets are available from hundreds of different websites, on virtually any topic. You might not be able to find the exact data that you want, but you should be able to find data that is relevant to your topic. You may also want to refine your research question so that it can be more clearly addressed by the data that you found. But be creative! Go find the data that you want!</p>
+<p>Below is a list of places to get started, but this list should be considered grossly non-exhaustive:</p>
+<ul>
+<li>Finding Data on the Internet (<a href="http://blog.revolutionanalytics.com/2011/10/where-to-look-for-data.html" class="uri">http://blog.revolutionanalytics.com/2011/10/where-to-look-for-data.html</a>)</li>
+<li>Gapminder (<a href="https://www.gapminder.org/">www.gapminder.org</a>)</li>
+<li>Data.gov (<a href="https://catalog.data.gov/dataset">explore.data.gov</a>)</li>
+<li>Awesome public data sets on GitHub (<a href="https://github.com/aloy/awesome-public-datasets" class="uri">https://github.com/aloy/awesome-public-datasets</a>)</li>
+<li>U.S. Bureau of Labor Statistics (<a href="https://www.bls.gov/">www.bls.gov</a>)</li>
+<li>U.S. Census Bureau (<a href="http://www.census.gov/">www.census.gov</a>)</li>
+</ul>
+<p>Keep the following in mind as you select your topic and data set:</p>
+<ul>
+<li>You need to have enough data to draw meaningful inferences. There is no magic number of individuals required for all projects, but aim for at least 200 observations (or about 12 observations per predictor at a minimum) and make sure there are at least 20 observations in each category of each of your categorical variables (if you have any).</li>
+<li>An interesting data set will be a mix of continuous and categorical variables.</li>
+<li>When you’re looking at a data set, ask yourself, is this a sample from some greater population or is this the population itself? Many of the inferential techniques that we’ve used are most appropriate for use on sampled data.</li>
+</ul>
+</div>
+</div>
+<div id="deadline-2-submitting-the-data-set-215" class="section level2">
+<h2>Deadline 2: Submitting the data set (2/15)</h2>
+<p>The second component is your final, clean data set, which should be emailed to me by Wednesday, 2/15 with the subject line #math430data.</p>
+<p>Below are some requirements for your submitted data set:</p>
+<ul>
+<li>The data must be in CSV format (.csv).</li>
+<li>Give the file a descriptive name that clearly communicates the context and distinguishes it from the other groups’ data files, e.g., group-X.csv, certainly not Data or even Our Statistics Project Data File. Do not use the following words in your file name: project, data, file, statistics, worksheet. Do not use spaces in file names.</li>
+<li>Each observation should be on a separate row of the data file, and each variable should be in a separate column.</li>
+<li>Name all variables helpfully and contextually, e.g., use Airport and WaterTemp, not Individuals and Treatments, and certainly not A and B. Similarly, for the category names, use whole words and phrases, not cryptic codes, e.g., use Male and Female, not 1 and 2, or even M and F. A dichotomous variable Female can be coded 0 for male, and 1 for female (and then is self-documenting). A variable sex coded 1 and 2 is just asking for trouble.</li>
+<li>That said, try to limit your variable and category names to about a dozen characters. This may take some abbreviation.</li>
+<li>Be sure that are sufficient numbers of individuals in each category of each categorical variable! If there are categories with too few individuals for you to spot any trends or to make meaningful inferences, create an additional version of this variable with fewer, consolidated categories (perhaps including an “Other” or “Miscellaneous” category).</li>
+<li>Check for typos! Manual inspection is OK, but its tedious and its easy to overlook misspellings. Running some simple analyses can more quickly make most data entry errors obvious</li>
+</ul>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
