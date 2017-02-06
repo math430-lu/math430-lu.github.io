@@ -11,19 +11,19 @@ Introduction to multiple linear regression (MLR)
 
 * Matrices in R [(pdf)](https://github.com/math430-lu/notes/blob/master/lec09/matrix_algebra_r.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec09/matrix_algebra_r.Rmd)
 
-* Intro to MLR [(pdf)](https://github.com/math430-lu/notes/blob/master/lec10/intro-mlr.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec10/intro-mlr.Rmd)
-
 For next time: 
 
 * Read section 5.2
 
 * Finish project proposal and print for submission
 
+
 ### Wednesday
 
 MLR
 
-* Slides
+* Intro to MLR [(pdf)](https://github.com/math430-lu/notes/blob/master/lec10/intro-mlr.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec10/intro-mlr.Rmd)
+
 
 For next time
 
