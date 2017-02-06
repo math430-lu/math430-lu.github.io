@@ -1,0 +1,37 @@
+---
+title: 'Week 5: Reformulating SLR using matrices'
+output: html_document
+---
+
+February 6, 2017
+
+### Monday
+
+Introduction to multiple linear regression (MLR)
+
+* Matrices in R [(pdf)](https://github.com/math430-lu/notes/blob/master/lec09/matrix_algebra_r.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec09/matrix_algebra_r.Rmd)
+
+* Intro to MLR [(pdf)](https://github.com/math430-lu/notes/blob/master/lec10/intro-mlr.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec10/intro-mlr.Rmd)
+
+For next time: 
+
+* Read section 5.2
+
+* Finish project proposal and print for submission
+
+### Wednesday
+
+MLR
+
+* Slides
+
+For next time
+
+* Work on cleaning your data set for the project (due 2/15)
+
+* Work on practice problems
+
+### Friday
+
+No class -- Midterm reading period
+

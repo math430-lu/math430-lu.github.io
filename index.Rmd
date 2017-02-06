@@ -21,3 +21,7 @@ January 23
 January 30
 
 #### [Week 5: Reformulating SLR using matrices](week05.html)
+
+February 6
+
+#### [Week 6: Multiple linear regression](week06.html)
