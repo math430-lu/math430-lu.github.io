@@ -8,3 +8,5 @@ output: html_document
 * [Problem Set 2](ps/ps2.html) [(Solution)](ps/hw2-sol.pdf)
 
 * [Problem Set 3](ps/ps3.html) (due 2/1 by 4:30 p.m.)
+
+* [MLR practice problems](ps/mlr-prac.html)
