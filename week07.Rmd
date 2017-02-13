@@ -1,0 +1,35 @@
+---
+title: 'Week 7: Multiple linear regression'
+output: html_document
+---
+
+February 13, 2017
+
+### Monday
+
+MLR
+
+* Wrapping up with the intro slides from last week
+
+* Adding categorical predictors [(pdf)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.Rmd)
+
+For next time: 
+
+* Read section 5.3
+
+* Finish cleaning your data sets, they are due 2/15 by 11:59 p.m.
+
+
+### Wednesday
+
+Wrap up and review
+
+
+For next time
+
+* Study for the midterm
+
+### Friday
+
+Midterm exam
+

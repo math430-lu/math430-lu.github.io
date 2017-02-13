@@ -25,3 +25,7 @@ January 30
 February 6
 
 #### [Week 6: Multiple linear regression](week06.html)
+
+February 13
+
+#### [Week 7: Multiple linear regression](week07.html)
