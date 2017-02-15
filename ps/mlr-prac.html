@@ -193,6 +193,28 @@ $(document).ready(function () {
 <div id="g" class="section level5">
 <h5>(g)</h5>
 <p>Construct a test of <span class="math inline">\(H_{0}:\ \beta_{H}=\beta_{N}=\beta_{C}=0\)</span>. What is the p-value? Write a one-sentence conclusion.</p>
+<p>For parts (h) and (i) use the following model:</p>
+<pre class="r"><code>bear_mod3 &lt;- lm(weight ~ chest + neck, data = bears)
+summary(bear_mod3)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = weight ~ chest + neck, data = bears)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -62.453 -20.347  -1.682  15.495 103.363 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) -267.065     16.942 -15.764  &lt; 2e-16 ***
+## chest          9.292      1.292   7.189 2.74e-09 ***
+## neck           5.769      2.143   2.692  0.00958 ** 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 31.25 on 51 degrees of freedom
+## Multiple R-squared:  0.9366, Adjusted R-squared:  0.9342 
+## F-statistic:   377 on 2 and 51 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 <div id="h" class="section level5">
 <h5>(h)</h5>

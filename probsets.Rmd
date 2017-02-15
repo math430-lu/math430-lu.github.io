@@ -9,4 +9,4 @@ output: html_document
 
 * [Problem Set 3](ps/ps3.html) [(Solution)](ps/hw3-sol.pdf)
 
-* [MLR practice problems](ps/mlr-prac.html)
+* [MLR practice problems](ps/mlr-prac.html) [(Solution)](ps/sol-mlr-prac.pdf)
