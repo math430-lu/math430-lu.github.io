@@ -127,32 +127,12 @@ $(document).ready(function () {
 <p>Please use R markdown to complete your assignment. Please knit your file either to Word or PDF and print the document for submission.</p>
 <div id="problem-1" class="section level4">
 <h4>Problem 1</h4>
-<p>The data in <code>heart.txt</code> are from a study of the effect of a new drug on a particular heart function. These drugs have been developed for another purpose, but one concern is whether they have a side effect on heart function. Drugs A and B are two forms of the drug, C is a placebo (i.e. a control, expected to have no effect on heart function). Thirty subjects were randomly assigned to a drug. The intent was to have 10 subjects per drug, but a mistake was made and drug B was given instead of drug C to one of the subjects. PRE is the heart function measured before the drug was administered. POST is the heart function 2 hours after the drug was administered.</p>
-<pre class="r"><code>heart &lt;- read.table(&quot;heart.txt&quot;, header = TRUE)</code></pre>
+<p>The data in <a href="https://raw.githubusercontent.com/math430-lu/data/master/heart.txt"><code>heart.txt</code></a> are from a study of the effect of a new drug on a particular heart function. These drugs have been developed for another purpose, but one concern is whether they have a side effect on heart function. Drugs A and B are two forms of the drug, C is a placebo (i.e. a control, expected to have no effect on heart function). Thirty subjects were randomly assigned to a drug. The intent was to have 10 subjects per drug, but a mistake was made and drug B was given instead of drug C to one of the subjects. <code>pre</code> is the heart function measured before the drug was administered. <code>post</code> is the heart function 2 hours after the drug was administered.</p>
+<pre class="r"><code># Code to load the data
+heart &lt;- read.table(&quot;https://raw.githubusercontent.com/math430-lu/data/master/heart.txt&quot;, header = TRUE)</code></pre>
 <div id="a" class="section level5">
 <h5>(a)</h5>
 <p>Consider only the post drug data. Is there evidence of an effect of the drugs on heart function?</p>
-<pre class="r"><code>heart_mod1 &lt;- lm(post ~ drug, data = heart)
-summary(heart_mod1)</code></pre>
-<pre><code>## 
-## Call:
-## lm(formula = post ~ drug, data = heart)
-## 
-## Residuals:
-##     Min      1Q  Median      3Q     Max 
-## -9.5000 -3.3523  0.7955  2.9432 14.5000 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)   75.500      1.572  48.021   &lt;2e-16 ***
-## drugB          2.409      2.172   1.109    0.277    
-## drugC          2.167      2.284   0.948    0.351    
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## Residual standard error: 4.972 on 27 degrees of freedom
-## Multiple R-squared:  0.05058,    Adjusted R-squared:  -0.01975 
-## F-statistic: 0.7192 on 2 and 27 DF,  p-value: 0.4962</code></pre>
 </div>
 <div id="b" class="section level5">
 <h5>(b)</h5>
@@ -160,19 +140,7 @@ summary(heart_mod1)</code></pre>
 </div>
 <div id="c" class="section level5">
 <h5>(c)</h5>
-<p>Consider a model that uses PRE drug data as a predictor. Assume a linear regression with the same slope for all drugs. Is there evidence of an effect of the drugs on heart function? Report your test statistic and p-value.</p>
-<pre class="r"><code>heart_mod2 &lt;- lm(post ~ drug + pre, data = heart)
-heart_mod3 &lt;- lm(post ~ pre, data = heart)
-anova(heart_mod3, heart_mod2)</code></pre>
-<pre><code>## Analysis of Variance Table
-## 
-## Model 1: post ~ pre
-## Model 2: post ~ drug + pre
-##   Res.Df    RSS Df Sum of Sq      F  Pr(&gt;F)  
-## 1     28 460.83                              
-## 2     26 360.40  2    100.43 3.6226 0.04094 *
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+<p>Consider a model that uses <code>pre</code> drug data as a predictor. Assume a linear regression with the same slope for all drugs. Is there evidence of an effect of the drugs on heart function? Report your test statistic and p-value.</p>
 </div>
 <div id="d" class="section level5">
 <h5>(d)</h5>
@@ -180,20 +148,11 @@ anova(heart_mod3, heart_mod2)</code></pre>
 </div>
 <div id="e" class="section level5">
 <h5>(e)</h5>
-<p>Estimate the mean difference between drug A and the placebo (C), for subjects with the same PRE heart function. Also report the s.e. of the adjusted difference.</p>
+<p>Estimate the mean difference between drug A and the placebo (C), for subjects with the same <code>pre</code> heart function. Also report the s.e. of the adjusted difference.</p>
 </div>
 <div id="f" class="section level5">
 <h5>(f)</h5>
-<p>One of the major assumptions of the above model is that the slope—i.e. the relationship between PRE and the response—is the same for all three drugs. Is this assumption reasonable here?</p>
-<pre class="r"><code>heart_mod4 &lt;- lm(post ~ pre * drug, data = heart)
-anova(heart_mod2, heart_mod4)</code></pre>
-<pre><code>## Analysis of Variance Table
-## 
-## Model 1: post ~ drug + pre
-## Model 2: post ~ pre * drug
-##   Res.Df    RSS Df Sum of Sq      F Pr(&gt;F)
-## 1     26 360.40                           
-## 2     24 344.27  2    16.125 0.5621 0.5774</code></pre>
+<p>One of the major assumptions of the above model is that the slope—i.e. the relationship between <code>pre</code> and the response—is the same for all three drugs. Is this assumption reasonable here?</p>
 </div>
 <div id="g" class="section level5">
 <h5>(g)</h5>
@@ -203,7 +162,7 @@ anova(heart_mod2, heart_mod4)</code></pre>
 </div>
 <div id="problem-2" class="section level4">
 <h4>Problem 2</h4>
-<p>The data file, <code>salary.csv</code> contains salary and other characteristics of all faculty in a smalle Midwestern college collected in the early 1980s for presentation in legal proceedings for which discrimination against women in salary was at issue. All persons in the data set hold tenured or tenure-track positions; temporary faculty are not included. The variables included are outlined in the table below.</p>
+<p>The data file, <a href="https://raw.githubusercontent.com/math430-lu/data/master/salary.csv"><code>salary.csv</code></a> contains salary and other characteristics of all faculty in a small Midwestern college collected in the early 1980s for presentation in legal proceedings for which discrimination against women in salary was at issue. All persons in the data set hold tenured or tenure-track positions; temporary faculty are not included. The variables included are outlined in the table below.</p>
 <table>
 <thead>
 <tr class="header">
@@ -214,7 +173,7 @@ anova(heart_mod2, heart_mod4)</code></pre>
 <tbody>
 <tr class="odd">
 <td><code>degree</code></td>
-<td><code>PhD</code> or <code>MS</code></td>
+<td><code>PhD</code> or <code>Masters</code></td>
 </tr>
 <tr class="even">
 <td><code>rank</code></td>
@@ -225,7 +184,7 @@ anova(heart_mod2, heart_mod4)</code></pre>
 <td><code>Male</code> or <code>Female</code></td>
 </tr>
 <tr class="even">
-<td><code>Year</code></td>
+<td><code>year</code></td>
 <td>number of years in the current rank</td>
 </tr>
 <tr class="odd">
@@ -252,7 +211,7 @@ anova(heart_mod2, heart_mod4)</code></pre>
 </div>
 <div id="d-1" class="section level5">
 <h5>(d)</h5>
-<p>Finkelstein (1980), in a discussion of the use of regression in discrimination cases wrote, “[a] variamay reflect a position or status bestowed by the employer, in which case if there is discrimination in the award of position or status, the variable may be ‘tainted.’” Thus, for example, if discrimination is at work in promotion of faculty to higher ranks, using rank to adjust salaries before comparing the sexes may not be acceptable to the courts.</p>
+<p>Finkelstein (1980), in a discussion of the use of regression in discrimination cases wrote, “[a] variable reflect a position or status bestowed by the employer, in which case if there is discrimination in the award of position or status, the variable may be ‘tainted.’” Thus, for example, if discrimination is at work in promotion of faculty to higher ranks, using rank to adjust salaries before comparing the sexes may not be acceptable to the courts.</p>
 <p>Exclude the <code>rank</code> variable, refit the model from part (c), and summarize your findings.</p>
 </div>
 </div>
