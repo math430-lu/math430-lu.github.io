@@ -11,7 +11,6 @@ MLR
 
 * Wrapping up with the intro slides from last week
 
-* Adding categorical predictors [(pdf)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.Rmd)
 
 For next time: 
 
@@ -22,7 +21,9 @@ For next time:
 
 ### Wednesday
 
-Wrap up and review
+* Wrap up and review
+
+* Adding categorical predictors [(pdf)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.Rmd)
 
 
 For next time

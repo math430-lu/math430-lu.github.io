@@ -1,0 +1,26 @@
+---
+title: 'Week 8: Multiple linear regression'
+output: html_document
+---
+
+February 20, 2017
+
+### Monday
+
+* Adding categorical predictors [(pdf)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.Rmd)
+
+
+For next time: 
+
+* Review section 5.3
+
+
+### Wednesday
+
+Diagnosing MLR models
+
+
+### Friday
+
+Diagnosing MLR models
+

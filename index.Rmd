@@ -29,3 +29,7 @@ February 6
 February 13
 
 #### [Week 7: Multiple linear regression](week07.html)
+
+February 20
+
+#### [Week 8: Model checking and selection](week07.html)
