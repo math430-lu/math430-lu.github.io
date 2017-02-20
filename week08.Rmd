@@ -7,17 +7,19 @@ February 20, 2017
 
 ### Monday
 
-* Adding categorical predictors [(pdf)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.Rmd)
+Adding categorical predictors [(pdf)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec11/categorical-predictors.Rmd)
 
 
 For next time: 
 
 * Review section 5.3
+* Read sections 6.1--6.4
 
 
 ### Wednesday
 
-Diagnosing MLR models
+Diagnosing MLR models [(pdf)](https://github.com/math430-lu/notes/blob/master/lec12/mlr-checking.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec12/mlr-checking.Rmd)
+
 
 
 ### Friday
