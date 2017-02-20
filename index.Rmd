@@ -32,4 +32,4 @@ February 13
 
 February 20
 
-#### [Week 8: Model checking and selection](week07.html)
+#### [Week 8: Model checking and selection](week08.html)
