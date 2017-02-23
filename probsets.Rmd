@@ -12,3 +12,5 @@ output: html_document
 * [MLR practice problems](ps/mlr-prac.html) [(Solution)](ps/sol-mlr-prac.pdf)
 
 * [Problem Set 4](ps/ps4.html) (due 2/24 by 4:30 p.m.)
+
+* [Problem Set 5](ps/ps5.html) (due 3/1 by 4:30 p.m.)
