@@ -26,3 +26,5 @@ Diagnosing MLR models [(pdf)](https://github.com/math430-lu/notes/blob/master/le
 
 Diagnosing MLR models
 
+* Diagnostic activity [(html)](http://htmlpreview.github.io/?https://github.com/math430-lu/notes/blob/master/lab04/lab04.html) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lab04/lab04.Rmd)
+
