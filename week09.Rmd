@@ -12,6 +12,7 @@ Variable selection [(pdf)](https://github.com/math430-lu/notes/blob/master/lec13
 
 For next time: 
 
+* Review [exam solutions](assets/sol_exam_m430.pdf)
 * Read 7.1--7.3
 
 
