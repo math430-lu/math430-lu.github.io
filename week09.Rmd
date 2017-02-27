@@ -1,0 +1,25 @@
+---
+title: 'Week 9: Variable selection'
+output: html_document
+---
+
+February 27, 2017
+
+### Monday
+
+Variable selection [(pdf)](https://github.com/math430-lu/notes/blob/master/lec13/model-selection-r.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec13/model-selection-r.Rmd)
+
+
+For next time: 
+
+* Read 7.1--7.3
+
+
+### Wednesday
+
+Variable selection
+
+
+### Friday
+
+Project workshop
