@@ -14,3 +14,5 @@ output: html_document
 * [Problem Set 4](ps/ps4.html) [(Solution)](ps/hw4-sol.pdf)
 
 * [Problem Set 5](ps/ps5.html) (due 3/1 by 4:30 p.m.)
+
+* [Problem Set 6](ps/ps6.html) (Optional, due 3/8 by 4:30 p.m.)
