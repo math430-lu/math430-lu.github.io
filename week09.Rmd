@@ -7,7 +7,7 @@ February 27, 2017
 
 ### Monday
 
-Variable selection [(pdf)](https://github.com/math430-lu/notes/blob/master/lec13/model-selection-r.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec13/model-selection-r.Rmd)
+Variable selection 
 
 
 For next time: 
@@ -18,7 +18,11 @@ For next time:
 
 ### Wednesday
 
-Variable selection
+Variable selection in R [(pdf)](https://github.com/math430-lu/notes/blob/master/lec13/model-selection-r.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec13/model-selection-r.Rmd)
+
+For next time: 
+
+* Work on projects
 
 
 ### Friday
