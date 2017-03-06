@@ -38,3 +38,6 @@ February 27
 
 #### [Week 9: Variable selection](week09.html)
 
+March 6
+
+#### [Week 10:  Bootstrapping + projects](week10.html)
