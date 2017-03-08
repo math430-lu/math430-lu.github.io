@@ -9,10 +9,11 @@ March 13, 2017
 
 Presentations will begin at 8 a.m.
 
-1. Alex, Mahmoud
-2. Deepta, Cassandra
-3. Bimal, Elkin, Jerry
-4. Henry
-5. Christian, Eryn, Malik
+
+1. Bimal, Elkin, Jerry
+2. Christian, Eryn, Malik
+3. Alex, Mahmoud
+4. Deepta, Cassandra
+5. Bimal, Elkin, Jerry
 6. Alick
 7. Abedin

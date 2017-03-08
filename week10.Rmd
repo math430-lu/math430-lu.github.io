@@ -31,6 +31,7 @@ Project presentations (round 1)
 
 The following groups will present:
 
-* Jackson
-* Olivia, Aletta, Siyi
-* Naomi, Claire, Yonah, Trang
+1. Naomi, Claire, Yonah, Trang
+2. Olivia, Aletta, Siyi
+3. Jackson
+4. Henry
