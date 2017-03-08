@@ -41,3 +41,7 @@ February 27
 March 6
 
 #### [Week 10:  Bootstrapping + projects](week10.html)
+
+March 13
+
+#### [Finals: Project presentations](finals.html)

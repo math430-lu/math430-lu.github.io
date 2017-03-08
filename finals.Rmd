@@ -1,0 +1,18 @@
+---
+title: 'Finals: Project presentations'
+output: html_document
+---
+
+March 13, 2017
+
+### Monday
+
+Presentations will begin at 8 a.m.
+
+1. Alex, Mahmoud
+2. Deepta, Cassandra
+3. Bimal, Elkin, Jerry
+4. Henry
+5. Christian, Eryn, Malik
+6. Alick
+7. Abedin
