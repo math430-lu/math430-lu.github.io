@@ -1,0 +1,39 @@
+---
+title: 'Week 10: Bootstrapping + projects'
+output: html_document
+---
+
+March 6, 2017
+
+### Monday
+
+Bootstrapping regression models [(pdf)](https://github.com/math430-lu/notes/blob/master/lec14/bootstrap.pdf) [(Rmd)](https://github.com/math430-lu/notes/blob/master/lec14/bootstrap.Rmd)
+
+
+For next time: 
+
+* Finish problem set if you are submitting it
+* Work on your projects
+
+
+### Wednesday
+
+Project workshop
+
+For next time: 
+
+* Work on projects
+
+
+### Friday
+
+Project presentations (round 1)
+
+The following groups will present:
+
+1. Naomi, Claire, Yonah, Trang
+2. Olivia, Aletta, Siyi
+3. Jackson
+4. Henry
+
+[Peer evaluation form](https://goo.gl/forms/PYRmuPLhXh9OsXzT2)
